@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqrtTextView" />
+
+    <TextView
+        android:id="@+id/sqrtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fallDetectionTextView"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timerTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usbTextView" />
+
+    <TextView
+        android:id="@+id/usbTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sqrtTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mapsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/abortButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/abortButton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/sosButton"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/abortButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView" />
+
+    <Button
+        android:id="@+id/languageButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/globe"
+        android:onClick="changeLanguage"
+        app:layout_constraintBottom_toTopOf="@+id/sqrtTextView"
+        app:layout_constraintEnd_toStartOf="@+id/mapsButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/statisticsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/statisticsButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/statistics"
+        android:onClick="statisticsVoiceCommandButtonMethod"
+        app:layout_constraintBottom_toTopOf="@+id/sqrtTextView"
+        app:layout_constraintEnd_toStartOf="@+id/languageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mapsButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/maps"
+        android:onClick="mapButtonMethod"
+        app:layout_constraintBottom_toTopOf="@+id/sqrtTextView"
+        app:layout_constraintEnd_toStartOf="@+id/usbTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/languageButton"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+
+
+    tools:layout_editor_absoluteX="78dp"
+    tools:layout_editor_absoluteY="2dp" />
+
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
